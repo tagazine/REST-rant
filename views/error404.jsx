@@ -7,6 +7,9 @@ function error404(){
             <main>
                 <h1>404: Page Not Found</h1>
                 <p>Wrong Page, Dummy!</p>
+                <img src="http://placekitten.com/200/300" alt="Cat" />
+                <div>Photo by <a href="placekitten.com">placekitten</a></div>
+
             </main>
         </Def>
     )
