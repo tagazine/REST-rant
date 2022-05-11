@@ -6,25 +6,23 @@ function places(data) {
     return (
       <div className="col-sm-6">
         <h2>{place.name}</h2>
-        <p className="text-center">
-          {place.cuisines}
-        </p>
+        <p className="text-center">{place.cuisines}</p>
         <img src={place.pic} alt={place.name} />
         <p className="text-center">
           Located in {place.city}, {place.state}
         </p>
       </div>
-    )
-  })
-  
+    );
+  });
+
   return (
-      <Def>
-          <main>
-              <h1>Rant or Rave Here</h1>
-              {placesFormatted}
-          </main>
-      </Def>
-  )
+    <Def>
+      <main>
+        <h1>Rant or Rave Here</h1>
+        <div className="row">{placesFormatted}</div>
+      </main>
+    </Def>
+  );
 }
 
 module.exports = places;
