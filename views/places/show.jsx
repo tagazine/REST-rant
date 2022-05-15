@@ -8,7 +8,7 @@ function show(data) {
         <main>
           <h1>{data.place.name}</h1>
           <h2>Rating</h2>
-          <h2>{data.place.pic}</h2>
+          <img src={data.place.pic} alt={data.place.name} />
           <h2>Description</h2>
           <h2>{data.place.city}</h2>
           <h2>{data.place.state}</h2>
@@ -19,7 +19,7 @@ function show(data) {
           Edit
         </a>
 
-        <form method="POST" action={`/places/${data.id}?_method=DELETE`}>
+        <form method="POST" action={ `/places/${data.id}?_method=DELETE` }>
           <button type="submit" className="btn btn-danger">
             Delete
           </button>
@@ -27,6 +27,6 @@ function show(data) {
       </Def>
     </html>
   );
-}
 
+}
 module.exports = show;

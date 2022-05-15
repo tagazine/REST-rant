@@ -1,14 +1,14 @@
 const React = require("react");
-const Def = require("../default.jsx");
+const Def = require("../default");
 
 function edit_form(data) {
   return (
     <Def>
       <main>
         <h1>Edit Place</h1>
-        <form method="POST" action={`/places/${data.id}?_method=PUT`}>
+        <form method="POST" action={ `/places/${data.id}?_method=PUT` }>
           <div className="form-group">
-            <label htmlFor="name">Place Name</label>
+            <label htmlFor="name">Name</label>
             <input
               className="form-control"
               id="name"
